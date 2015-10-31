@@ -1,0 +1,11 @@
+﻿Build started 2015-10-31 16:15:25.
+     1>Project "D:\Development\Robotkar\SW\PC side\ZQServer2\ZQServer2\ZQServer2.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         E:\Installed Programs\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Development\Robotkar\SW\PC side\ZQServer2\Debug\ZQServer2.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\ZeroMQ 4.0.4\lib" "libzmq-v110-mt-4_0_4.dll" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Development\Robotkar\SW\PC side\ZQServer2\Debug\ZQServer2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\Robotkar\SW\PC side\ZQServer2\Debug\ZQServer2.lib" /MACHINE:X86 Debug\stdafx.obj
+         Debug\ZQServer2.obj
+     1>libzmq-v110-mt-4_0_4.dll : fatal error LNK1107: invalid or corrupt file: cannot read at 0x308
+     1>Done Building Project "D:\Development\Robotkar\SW\PC side\ZQServer2\ZQServer2\ZQServer2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.10
