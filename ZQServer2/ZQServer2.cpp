@@ -6,6 +6,8 @@
 #include <iostream>
 #include <string>
 
+void sendCommand(void*, char*);
+
 int main()
 {
 
@@ -17,19 +19,32 @@ int main()
 
 	while (1) {
 		
-		
-		char buffer[10];
-		zmq_recv(responder, buffer, 10, 0);
-		     
-		char data[] = "M1:132.45";
-		zmq_send(responder, data, sizeof(data), 0);
-		std::cout << std::to_string(msg_cnt) << ". command sent" << std::endl;
-		Sleep(1000);
-		msg_cnt++;
+		char data2[] = "M5:-";		
+		char data[] = "M3:-";
+
+		sendCommand(responder, data);
+		//Sleep(10);
+		sendCommand(responder, data2);
+		//Sleep(10);
 	}
 
 	zmq_close(responder);
 
 	return 0;
 }
+
+
+
+	static void sendCommand(void* r, char* cmd) {
+
+		static int n;
+		char buffer[10];
+		zmq_recv(r, buffer, 10, 0);
+
+		zmq_send(r, cmd, sizeof(cmd), 0);
+		std::cout << std::to_string(n++) << ". command sent." << std::endl;
+		
+		
+		Sleep(1);
+	}
 
