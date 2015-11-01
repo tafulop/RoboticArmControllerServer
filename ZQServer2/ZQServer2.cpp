@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <zmq.h>
 #include <iostream>
+#include <string>
 
 int main()
 {
@@ -12,15 +13,19 @@ int main()
 	void *context = zmq_ctx_new();
 	void *responder = zmq_socket(context, ZMQ_REP);
 	int rc = zmq_bind(responder, "tcp://*:5555");
-	
+	int msg_cnt = 0;
 
 	while (1) {
+		
+		
 		char buffer[10];
 		zmq_recv(responder, buffer, 10, 0);
-		printf("Received Hello\n");
-		//sleep(1);          //  Do some 'work'
-		zmq_send(responder, "World", 5, 0);
-		std::cout << buffer;
+		     
+		char data[] = "M1:132.45";
+		zmq_send(responder, data, sizeof(data), 0);
+		std::cout << std::to_string(msg_cnt) << ". command sent" << std::endl;
+		Sleep(1000);
+		msg_cnt++;
 	}
 
 	zmq_close(responder);
