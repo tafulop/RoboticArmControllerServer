@@ -1,5 +1,5 @@
-﻿Build started 11/5/2015 13:22:44.
-     1>Project "d:\Development_local\RoboticArmControllerServer\ZQServer2\ZQServer2.vcxproj" on node 2 (Build target(s)).
+﻿Build started 11/5/2015 16:47:59.
+     1>Project "D:\Development_local\RoboticArmControllerServer\ZQServer2\ZQServer2.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\ZeroMQ 4.0.4\include" /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\ZQServer2.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt ZQServer2.cpp
          ZQServer2.cpp
@@ -7,8 +7,8 @@
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Development_local\RoboticArmControllerServer\x64\Debug\ZQServer2.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\ZeroMQ 4.0.4\lib" "libzmq-v120-mt-4_0_4.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Development_local\RoboticArmControllerServer\x64\Debug\ZQServer2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development_local\RoboticArmControllerServer\x64\Debug\ZQServer2.lib" /MACHINE:X64 x64\Debug\stdafx.obj
          x64\Debug\ZQServer2.obj
          ZQServer2.vcxproj -> D:\Development_local\RoboticArmControllerServer\x64\Debug\ZQServer2.exe
-     1>Done Building Project "d:\Development_local\RoboticArmControllerServer\ZQServer2\ZQServer2.vcxproj" (Build target(s)).
+     1>Done Building Project "D:\Development_local\RoboticArmControllerServer\ZQServer2\ZQServer2.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.04
+Time Elapsed 00:00:01.07

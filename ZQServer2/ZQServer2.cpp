@@ -20,11 +20,11 @@ int main()
 	while (1) {
 		
 		char data2[] = "M5:-";		
-		char data[] = "M3:55";
+		char data[] = "M3:-55";
 		
 		sendCommand(responder, data);
 		
-		Sleep(10);
+		Sleep(100);
 	}
 
 	zmq_close(responder);
