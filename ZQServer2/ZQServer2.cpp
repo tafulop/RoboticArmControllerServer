@@ -20,12 +20,11 @@ int main()
 	while (1) {
 		
 		char data2[] = "M5:-";		
-		char data[] = "M3:-";
-
+		char data[] = "M3:55";
+		
 		sendCommand(responder, data);
-		//Sleep(10);
-		sendCommand(responder, data2);
-		//Sleep(10);
+		
+		Sleep(10);
 	}
 
 	zmq_close(responder);
@@ -43,7 +42,6 @@ int main()
 
 		zmq_send(r, cmd, sizeof(cmd), 0);
 		std::cout << std::to_string(n++) << ". command sent." << std::endl;
-		
 		
 		Sleep(1);
 	}
